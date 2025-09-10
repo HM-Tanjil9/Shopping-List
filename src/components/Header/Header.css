@@ -1,0 +1,20 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-text {
+  letter-spacing: 0.8rem;
+  font-size: 3rem;
+  color: var(--deep-orange);
+  font-weight: 700;
+}
+.header-image-wrapper {
+  width: 300px;
+  height: 300px;
+}
+.header-image {
+  max-width: 100%;
+  max-height: 100%;
+}
