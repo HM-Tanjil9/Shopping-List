@@ -12,7 +12,8 @@
 }
 .header-image-wrapper {
   width: 300px;
-  height: 300px;
+  height: 100%;
+  text-align: center;
 }
 .header-image {
   max-width: 100%;
