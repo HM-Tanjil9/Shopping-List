@@ -1,0 +1,35 @@
+.item-wrapper {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-wrapper h4 {
+  font-size: x-large;
+}
+
+.item-buttons span {
+  color: var(--deep-orange);
+}
+
+.item-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px;
+  border-radius: 30px;
+  border: 2px solid gainsboro;
+}
+
+.icon-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+}
