@@ -1,16 +1,22 @@
-import Item from "../Item/Item"
-import "./ItemList.css"
+import React from "react";
+import Item from "../Item/Item";
+import "./ItemList.css";
 
-function ItemList({shoppingItems}) {
+function ItemList({shoppingItems, addPlusQuantity, addMinusQuantity}) {
   return (
     <div className="shopping-Items-wrapper">
         {
-            shoppingItems && shoppingItems.map(item => {
+            shoppingItems && shoppingItems
+            ?.map(item => {
+                
                 return(
                     <Item
+                      key={item.id}
                       itemName={item.name}
                       quantity={item.quantity}
-                      key={item.id}
+                      itemId={item.id}
+                      addPlusQuantity={addPlusQuantity}
+                      addMinusQuantity={addMinusQuantity}
                     />
                 )
             })
@@ -19,4 +25,4 @@ function ItemList({shoppingItems}) {
   )
 }
 
-export default ItemList
+export default React.memo(ItemList);
